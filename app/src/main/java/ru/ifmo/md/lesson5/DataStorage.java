@@ -132,6 +132,7 @@ public class DataStorage {
         sql = db.getWritableDatabase();
 
         sql.delete(db.urlTable, db.NAME_COLUM + " = '" + key + "'", null);
+        sql.delete(db.rssTable, db.SOURCE_NAME_COLUM + " = '" + key + "'", null);
 
         sql.close();
     }

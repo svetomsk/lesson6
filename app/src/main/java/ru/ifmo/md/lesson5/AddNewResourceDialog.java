@@ -47,6 +47,7 @@ public class AddNewResourceDialog extends Dialog {
             public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
                 boolean handled = false;
                 if(i == EditorInfo.IME_ACTION_SEND) {
+                    url.setText("http://");
                     url.requestFocus();
                     handled = true;
                 }

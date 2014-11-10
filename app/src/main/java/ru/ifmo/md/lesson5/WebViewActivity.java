@@ -15,6 +15,6 @@ public class WebViewActivity extends Activity {
         WebView webView = new WebView(this);
         setContentView(webView);
         Intent intent = getIntent();
-        webView.loadUrl(intent.getStringExtra(MyActivity.key));
+        webView.loadUrl(intent.getStringExtra(DisplayChanelDataActivity.key));
     }
 }
